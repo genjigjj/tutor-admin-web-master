@@ -50,7 +50,7 @@ module.exports = {
     //   }
 
         '/api': {
-          target: `http://localhost:9999/tutor`,
+          target: `http://localhost:9999`,
           changeOrigin: true,
           pathRewrite: {
             ['^' + '/api']: ''
