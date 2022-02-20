@@ -37,7 +37,7 @@
       <el-table-column  type="index" label="序号" width="55"></el-table-column>
       <el-table-column  label="头像" width="80" align="center">
         <template slot-scope="scope">
-          <el-avatar shape="square" :size="50" fit="fit" :src="scope.row.headImage"></el-avatar>
+          <el-avatar shape="square" :size="50" fit="fit" :src="scope.row.headImage" :key="scope.row.headImage"></el-avatar>
         </template>
       </el-table-column>
       <el-table-column prop="nickname" label="昵称" width="120"></el-table-column>
